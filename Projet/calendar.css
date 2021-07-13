@@ -1,0 +1,80 @@
+:root{
+    --light-gray: #CCCDD0;
+    --light-blue: #1B9CE2;
+}
+
+#calendar{
+    margin: 10px;
+    font-family: sans-serif;
+}
+
+
+
+#app-calendar #month{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 0fr repeat(6, 1fr);
+    height: 100%;
+}
+
+#app-calendar #day{
+    display: grid;
+    grid-template-columns: 0fr 1fr;
+    grid-template-rows: 0fr repeat(24, 1fr);
+}
+
+#app-calendar #week{
+    display: grid;
+    grid-template-columns: 0fr repeat(7, 1fr);
+    grid-template-rows: 0fr repeat(24, 1fr);
+}
+
+.day{
+    border: 1px solid rgba(204, 205, 208, 0.30);
+    text-align: center;
+}
+
+.name{
+    text-align: center;
+    padding: 5px;
+    color: white;
+    background-color: #959595;
+    opacity: 1;
+}
+
+.notmonth .number, .notmonthtoday .number {
+    color: #CCCDD0;
+    
+}
+
+
+.today , .notmonthtoday{
+    background-color: #E6E6E6;
+}
+
+
+button{
+    height: 30px;
+}
+
+span{
+    font-size: 20px;
+}
+
+.button-group .left{
+    float:left;
+}
+
+.button-group .right{
+    float:right;
+}
+
+.hour{
+    text-align: center;
+    padding: 15px;
+}
+
+#View{
+    text-align: center;
+    font-size: 30px;
+}
